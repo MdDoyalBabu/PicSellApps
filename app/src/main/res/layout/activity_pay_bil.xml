@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/color_picsell_background"
+    tools:context=".PayBilActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_margin="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    layout="@layout/title_layout"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:background="@drawable/color_billing_btn"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:fontFamily="serif"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_marginTop="25dp"
+                android:padding="10dp"
+                android:text="@string/billing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_margin="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="35sp"
+                        android:text="@string/total_bill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/totalBill_id"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="35sp"
+                        android:text="@string/_500_rd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="40dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+
+                        android:id="@+id/card_number"
+                        android:background="@drawable/input_fill_totalbil"
+                        android:padding="10dp"
+                        android:inputType="number"
+                        android:hint="@string/card_number"
+                        android:textColorHint="@color/white"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <EditText
+                        android:id="@+id/account_holder_name"
+                        android:textColorHint="@color/white"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/input_fill_totalbil"
+                        android:padding="10dp"
+                        android:inputType="text"
+                        android:hint="@string/account_holder_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/expire_date_id"
+                            android:textColorHint="@color/white"
+                            android:textStyle="bold"
+                            android:background="@drawable/input_fill_totalbil"
+                            android:padding="10dp"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:hint="@string/expire_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <EditText
+                            android:id="@+id/cvc_id"
+                            android:textColorHint="@color/white"
+                            android:textStyle="bold"
+                            android:background="@drawable/input_fill_totalbil"
+                            android:padding="10dp"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:hint="@string/cvc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/card_pin_id"
+                        android:textColorHint="@color/white"
+                        android:textStyle="bold"
+                        android:background="@drawable/input_fill_totalbil"
+                        android:padding="10dp"
+                        android:layout_margin="2dp"
+                        android:inputType="number"
+                        android:hint="@string/card_pin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/payBil_id"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="30dp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/color_btn"
+                        android:textColor="@color/white"
+                        android:text="Pay Bill"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>

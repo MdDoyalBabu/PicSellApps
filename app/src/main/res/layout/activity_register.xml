@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/color_picsell_background"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_margin="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    layout="@layout/title_layout"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:background="@drawable/color_btn"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/registration_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_margin="25dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/sponsor_id"
+                    android:inputType="number"
+                    android:hint="@string/sponsor_id"
+                    android:padding="13dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/input_fill_totalbil"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/username_id"
+                    android:textStyle="bold"
+                    android:layout_marginTop="13dp"
+                    android:padding="13dp"
+                    android:background="@drawable/input_fill_totalbil"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/white"
+                    android:inputType="text"
+                    android:hint="@string/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/password_id"
+                    android:textStyle="bold"
+                    android:layout_marginTop="13dp"
+                    android:padding="13dp"
+                    android:background="@drawable/input_fill_totalbil"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/white"
+                    android:inputType="textPassword"
+                    android:hint="@string/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/password_again_id"
+                    android:textStyle="bold"
+                    android:layout_marginTop="13dp"
+                    android:padding="13dp"
+                    android:background="@drawable/input_fill_totalbil"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/white"
+                    android:inputType="textPassword"
+                    android:hint="@string/again_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:background="@drawable/color_btn"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_marginTop="25dp"
+                android:padding="10dp"
+                android:text="@string/choose_package"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_margin="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:background="@drawable/package_backgorund"
+                        android:padding="15dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:weightSum="3"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_weight="2.5"
+                                android:textColor="@color/color_silver_text"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                android:text="@string/silver"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <Button
+                                android:id="@+id/silver_btn_id"
+                                android:background="@drawable/color_usd_btn"
+                                android:layout_weight="0.5"
+                                android:text="@string/_30_usd"
+                                android:textSize="25sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"/>
+                        </LinearLayout>
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/color_silver_text"
+                            android:text="@string/daily_upload_limit_10_image_1_usd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:background="@drawable/color_gold_border"
+                        android:padding="15dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:weightSum="3"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_weight="2.5"
+                                android:textColor="@color/color_gold_text"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                android:text="@string/gold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <Button
+                                android:id="@+id/gold_btn_id"
+                                android:background="@drawable/color_gold_btn"
+                                android:layout_weight="0.5"
+                                android:textSize="25sp"
+                                android:text="@string/_300_usd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"/>
+                        </LinearLayout>
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/color_silver_text"
+                            android:text="@string/daily_upload_limit_50_image_10_usd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="35dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:background="@drawable/color_diamond_border"
+                        android:padding="15dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:weightSum="3"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_weight="2.5"
+                                android:textColor="@color/white"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                android:text="@string/diamond1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <Button
+                                android:id="@+id/diamond_btn_id"
+                                android:textSize="25sp"
+                                android:background="@drawable/color_diamond_btn"
+                                android:layout_weight="0.5"
+                                android:text="@string/_500_usd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"/>
+                        </LinearLayout>
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/color_silver_text"
+                            android:text="@string/daily_upload_limit_100_image_20_rd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">PicSellApps</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="or">Or</string>
+    <string name="login">Login</string>
+    <string name="create_an_account">Create An Account</string>
+    <string name="picsell">PicSell</string>
+    <string name="sell_your_image_here">Sell your image here !</string>
+    <string name="registration_page">Registration Page</string>
+    <string name="sponsor_id">Sponsor ID</string>
+    <string name="again_password">Again Password</string>
+    <string name="choose_package">Choose Package</string>
+    <string name="silver">Silver</string>
+    <string name="_30_usd">30 USD</string>
+    <string name="daily_upload_limit_10_image_1_usd">daily upload limit 10 image = 1 USD</string>
+    <string name="gold">Gold</string>
+    <string name="_300_usd">300 USD</string>
+    <string name="daily_upload_limit_50_image_10_usd">daily upload limit 50 image = 10 USD</string>
+    <string name="diamond1">Diamond</string>
+    <string name="_500_usd">500 USD</string>
+    <string name="daily_upload_limit_100_image_20_rd">daily upload limit 100 image = 20 RD</string>
+    <string name="billing">Billing</string>
+    <string name="total_bill">Total Bill :</string>
+    <string name="_500_rd">500 RD</string>
+    <string name="card_number">Card Number</string>
+    <string name="account_holder_name">Account Holder Name</string>
+    <string name="expire_date">Expire Date</string>
+    <string name="cvc">CVC</string>
+    <string name="card_pin">Card Pin</string>
+    <string name="name">Name :</string>
+    <string name="fd_ferdous_rahman_doyal">FD Ferdous Rahman Doyal</string>
+    <string name="phone">Phone :</string>
+    <string name="_01744431962">01744431962</string>
+    <string name="joining_date">Joining Date :</string>
+    <string name="_11_08_2021">11-08-2021</string>
+    <string name="account_status">Account status :</string>
+    <string name="active">Active</string>
+    <string name="referral_id">Referral ID :</string>
+    <string name="statement">Statement</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="your_account_type">Your Account Type :</string>
+    <string name="diamond">Diamond</string>
+    <string name="your_daily_sell_limit">your daily sell limit :</string>
+    <string name="_20_image">20 image</string>
+    <string name="today_date">today date :</string>
+    <string name="today_total_sell">today total sell :</string>
+    <string name="_500">500</string>
+    <string name="picture_upload_to_sell">Picture Upload to sell</string>
+    <string name="all_sold_picture">All Sold picture</string>
+    <string name="_01425873">01425873</string>
+</resources>
